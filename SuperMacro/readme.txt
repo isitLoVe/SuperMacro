@@ -2,6 +2,9 @@ TODO
 update readme on how to use "Super" macros
 support DiscordBars, etc.
 
+3.16
+fixed compatibilty with Bongos Action Bars
+
 3.15 beta 1 release
 fixed: FindFirstItem returns correct info for use( %d [,%d]) and /use %d [, %d]
 fixed: FindFirstSpell returns correct info for /cast

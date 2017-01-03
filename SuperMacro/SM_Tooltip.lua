@@ -95,13 +95,17 @@ function GetActionCooldown( actionid )
 
 		local macroname, pic;
 		if ( this ) then
-			macroname=getglobal(this:GetName().."Name");
-			if ( macroname ) then
-				macroname:SetText(name);
-			end
-			pic = getglobal(this:GetName().."Icon");
-			if ( pic ) then
-				pic:SetTexture(icon);
+		
+		--fix for Bongos by Luise
+		if this:GetName() then 
+			macroname = getglobal(this:GetName().."Name");
+				if ( macroname ) then
+					macroname:SetText(name);
+				end
+				pic = getglobal(this:GetName().."Icon");
+				if ( pic ) then
+					pic:SetTexture(icon);
+				end
 			end
 		end
 
